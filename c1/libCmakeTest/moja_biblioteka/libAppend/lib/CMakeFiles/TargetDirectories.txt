@@ -1,0 +1,3 @@
+C:/STM32_Toolchain/Programy_cube/TDD/c1/libCmakeTest/libAppend/lib/CMakeFiles/mojaBibliteka.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/libCmakeTest/libAppend/lib/CMakeFiles/edit_cache.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/libCmakeTest/libAppend/lib/CMakeFiles/rebuild_cache.dir

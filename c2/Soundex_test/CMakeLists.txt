@@ -11,6 +11,7 @@ add_executable(SoundexTest SoundexTest.cpp)
 
 include_directories($ENV{GMOCK_DIR}/include $ENV{GMOCK_DIR}/gtest/include)
 include_directories($ENV{GTEST_DIR}/include $ENV{GTEST_DIR}/gtest/include)
+include_directories($ENV{GOOGLE_TEST_DIR}/mybuild/include/gmock $ENV{GTEST_DIR}/mybuild/include/gtest)
 
 
 #link_directories($ENV{GMOCK_DIR}/mybuild $ENV{GMOCK_DIR}/gtest/mybuild)
@@ -20,16 +21,18 @@ include_directories($ENV{GTEST_DIR}/include $ENV{GTEST_DIR}/gtest/include)
 #cmake -H. -Bmybuild -G"Ninja"
 #cmake --build mybuild
 
-link_directories ($ENV{GOOGLE_TEST_DIR}/mybuild/googlemock/ $ENV{GOOGLE_TEST_DIR}/mybuild/googlemock/gtest/)
+#link_directories ($ENV{GOOGLE_TEST_DIR}/mybuild/googlemock/ $ENV{GOOGLE_TEST_DIR}/mybuild/googlemock/gtest/)
+#link_directories ($ENV{GOOGLE_TEST_DIR}/mybuild/lib/)
 
-
-#add_definitions(-std=c++0x)
-add_definitions(-std=gnu++0x)
+add_definitions(-std=c++0x)
+#add_definitions(-std=gnu++0x)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 set(sources main.cpp SoundexTest.cpp)
-target_link_libraries(SoundexTest gmock) 
+target_link_libraries(SoundexTest libgmock.a)
+target_link_libraries(SoundexTest libgtest.a)
+
 
 #add_executable(tester ${sources})
 
@@ -40,3 +43,5 @@ target_link_libraries(SoundexTest gmock)
 
 
 
+ #cmake --help-module-list | grep --color=auto G
+ #https://cmake.org/cmake/help/v3.10/module/GoogleTest.html
