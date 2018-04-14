@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-src/googletest/CMakeLists.txt
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-src/googletest/cmake/internal_utils.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPythonInterp.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindThreads.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CheckLibraryExists.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CheckSymbolExists.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CheckIncludeFile.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CheckIncludeFile.c.in
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake

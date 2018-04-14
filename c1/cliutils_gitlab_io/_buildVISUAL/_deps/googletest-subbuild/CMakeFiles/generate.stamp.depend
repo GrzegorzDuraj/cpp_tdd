@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CMakeDetermineSystem.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CMakeSystem.cmake.in
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/3.11.0-rc1/CMakeSystem.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CMakeSystemSpecificInitialize.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CMakeSystemSpecificInformation.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CMakeGenericSystem.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/CMakeInitializeConfigs.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/Platform/Windows.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/Platform/WindowsPaths.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/ExternalProject.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindGit.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/RepositoryInfo.txt.in
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindGit.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/STM32_Toolchain/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-cfgcmd.txt.in

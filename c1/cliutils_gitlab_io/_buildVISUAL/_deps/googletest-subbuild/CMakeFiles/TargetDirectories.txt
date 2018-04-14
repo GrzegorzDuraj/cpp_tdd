@@ -1,0 +1,3 @@
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/ZERO_CHECK.dir

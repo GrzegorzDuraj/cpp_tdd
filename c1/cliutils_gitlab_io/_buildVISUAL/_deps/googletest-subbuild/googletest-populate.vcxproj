@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B35E6D38-2944-304C-9E89-C65A73552F81}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>googletest-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-download.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-download.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-download.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-download.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-update.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-update.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-update.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -P C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-update.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-patch.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-patch.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-patch.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-patch.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-configure.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-configure.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-configure.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-configure.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-build.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-build.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-build.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-build.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-install.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-install.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-install.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-install.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\2bdfb209f025141444a5d159beef3888\googletest-populate-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-test.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-test.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-test.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/2bdfb209f025141444a5d159beef3888/googletest-populate-test.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\d964f5600c15cc8ac5303804ef386ce8\googletest-populate-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/d964f5600c15cc8ac5303804ef386ce8/googletest-populate-complete.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/d964f5600c15cc8ac5303804ef386ce8/googletest-populate-complete.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/d964f5600c15cc8ac5303804ef386ce8/googletest-populate-complete.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E make_directory C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\STM32_Toolchain\CMake\bin\cmake.exe -E touch C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/d964f5600c15cc8ac5303804ef386ce8/googletest-populate-complete.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\18fad91bd50bb52f7766a0ac3da923ae\googletest-populate.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/18fad91bd50bb52f7766a0ac3da923ae/googletest-populate.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/18fad91bd50bb52f7766a0ac3da923ae/googletest-populate.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/18fad91bd50bb52f7766a0ac3da923ae/googletest-populate.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/18fad91bd50bb52f7766a0ac3da923ae/googletest-populate.rule;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{841B68CF-66B3-34CD-8927-D1B94D9C22F5}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

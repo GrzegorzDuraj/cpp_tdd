@@ -1,0 +1,13 @@
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/CMakeFiles/INSTALL.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/CMakeFiles/ALL_BUILD.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/CMakeFiles/ZERO_CHECK.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/CMakeFiles/INSTALL.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/CMakeFiles/ALL_BUILD.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/CMakeFiles/INSTALL.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/CMakeFiles/ALL_BUILD.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/gtest/CMakeFiles/gtest.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/gtest/CMakeFiles/INSTALL.dir
+C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-build/googlemock/gtest/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src\googletest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src\googlemock\src\gmock-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-src\googlemock\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C6FFF0C-ACCC-312A-9AEE-D66DFED940A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

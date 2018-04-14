@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78B11B5B-072D-3588-9419-B278BDE85335}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\STM32_Toolchain\CMake\bin\cmake.exe -HC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild -BC:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild --check-stamp-file C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/STM32_Toolchain/Programy_cube/TDD/c1/cliutils_gitlab_io/_buildVISUAL/_deps/googletest-subbuild/CMakeLists.txt;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeDetermineSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystem.cmake.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\3.11.0-rc1\CMakeSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\ExternalProject.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\RepositoryInfo.txt.in;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindGit.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\STM32_Toolchain\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{841B68CF-66B3-34CD-8927-D1B94D9C22F5}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\_deps\googletest-subbuild\googletest-populate.vcxproj">
+      <Project>{B35E6D38-2944-304C-9E89-C65A73552F81}</Project>
+      <Name>googletest-populate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

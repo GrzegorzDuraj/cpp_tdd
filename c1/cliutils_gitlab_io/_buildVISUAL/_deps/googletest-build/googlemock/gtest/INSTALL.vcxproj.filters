@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\STM32_Toolchain\Programy_cube\TDD\c1\cliutils_gitlab_io\_buildVISUAL\CMakeFiles\abf78e52ece3e606c7cbcc502ab73555\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9E3289FD-C580-39A2-8515-F070EF93E1E2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
