@@ -6,5 +6,7 @@ class Soundex
 	bool test_f(bool b);
 	
 	std::string returnHelloWorld();
+	
+	std::string encode(const std::string & word) const;
 
 };

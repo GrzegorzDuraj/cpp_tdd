@@ -1,16 +1,18 @@
 #include "gmock/gmock.h"
+#include "Soundex.h"
 
-//#include "Soundex.h"
-
-using ::testing::Return;
-
-class Soundex
-{
-};
+using ::testing::Eq;
 
 
 TEST(SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
 {
 	Soundex soundex;
+	std::string A ("A");
+	
+	std::string encoded = soundex.encode(A);
+
+	ASSERT_THAT(encoded,Eq("A"));
+	
+
 }
 

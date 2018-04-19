@@ -34,3 +34,8 @@
 
 #directory
 _build/
+
+
+# Temporary files
+*.swp
+

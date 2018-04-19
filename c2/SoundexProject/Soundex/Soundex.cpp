@@ -9,3 +9,9 @@ std::string Soundex::returnHelloWorld()
 {
 	return std::string ("Hello World");
 }
+
+
+std::string encode(const std::string & word)
+{
+	return word;
+}
