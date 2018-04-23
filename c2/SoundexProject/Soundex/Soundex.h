@@ -7,6 +7,6 @@ class Soundex
 	
 	std::string returnHelloWorld();
 	
-	std::string encode(const std::string & word) const;
+	std::string encode( std::string & word) ;
 
 };

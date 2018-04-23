@@ -11,7 +11,7 @@ std::string Soundex::returnHelloWorld()
 }
 
 
-std::string encode(const std::string & word)
+std::string Soundex::encode( std::string & word)
 {
 	return word;
 }
