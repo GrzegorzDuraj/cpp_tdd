@@ -8,18 +8,10 @@ TEST(SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
 {
 	Soundex soundex;
 
-	
-//	
 	bool sTrue = soundex.test_f(true);
 
-	ASSERT_THAT(sTrue, true);
     ASSERT_THAT(sTrue, true);
 	ASSERT_THAT(sTrue, false);
-	
-	
-
-	
-
 }
 
 

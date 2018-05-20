@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.5.1)
+cmake_minimum_required(VERSION 3.5)
 
-project(SoundexTest)
+project(SoundexProject)
 
 enable_testing()
 
 add_subdirectory(Soundex)
-add_subdirectory(test_Soundex)
+add_subdirectory(SoundexTest)
