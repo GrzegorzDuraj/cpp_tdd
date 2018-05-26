@@ -4,6 +4,6 @@ project(SoundexProject)
 
 enable_testing()
 
-add_subdirectory(Soundex)
-add_subdirectory(googleTest)
+add_subdirectory(SoundexLib)
+add_subdirectory(main)
 add_subdirectory(SoundexTest)

@@ -1,17 +1,11 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 #include <string>
+#include "Soundex.h"
 
 
-class Soundex 
-{
-public:
-	std::string encode(const std::string &word)const
-	{
-		return "A";
-	}
 
-};
+using ::testing::Eq;
 
 TEST (SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
 {

@@ -10,6 +10,7 @@ int main ()
 	Soundex soundex;
 	std::cout << soundex.GetNameOfClass() << std::endl;
 	
+	std::cout << soundex.encode("encode") << std::endl;;
 	
 	return 0; 
 }
