@@ -37,14 +37,28 @@ std::string Soundex::encodedDigits(const std::string & word) const
 	std::string encoding; 
   	for (auto letter: word)
 	{
-		if (encoding.length() == MaxCodeLength - 1 ) break;
-
- 		encoding += encodedDigit(letter);	
+		if (isComplete(encoding)) break;
+		if (encodedDigit(letter) != lastDigit(encoding))
+		{
+ 			encoding += encodedDigit(letter);	
+		}
 	}	
 	return encoding; 
+
 }
 
-const std::string NotADigit {"*"};
+bool Soundex::isComplete(const std::string & encoding) const
+{
+	return  encoding.length() == MaxCodeLength - 1;
+}
+
+std::string Soundex::lastDigit (const std::string & encoding) const
+{
+	if (encoding.empty()) return "";
+	return std::string (1,encoding.back());
+} 
+
+const std::string NotADigit {""};
 
    std::string Soundex::encodedDigit(char letter) const {
       const std::unordered_map<char, std::string> encodings {

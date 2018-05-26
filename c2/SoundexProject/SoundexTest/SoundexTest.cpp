@@ -30,7 +30,7 @@ TEST_F (SoundexEncoding, ReplacesConsonantsWithAppropiateDigits)
 
 TEST_F ( SoundexEncoding, IgnoresNonAlphabetis)
 {
-	ASSERT_THAT(soundex.encode("A#"), Eq("A*00"));
+	ASSERT_THAT(soundex.encode("A#"), Eq("A000"));
 }
 
 TEST_F (SoundexEncoding, ReplacesMultipleConsosantsWithDigits)
@@ -42,3 +42,17 @@ TEST_F (SoundexEncoding, LimitsLengthToFourCharacters)
 {
 	ASSERT_THAT( soundex.encode("Dcdlb").length(), Eq(4u));
 }
+
+TEST_F (SoundexEncoding, IgnoresVowelLikeLetters)
+{
+	ASSERT_THAT( soundex.encode("Baeiouhcdl"), Eq("B234"));
+}
+
+TEST_F(SoundexEncoding, CombinesDuplicateEncoding)
+{
+	ASSERT_THAT (soundex.encodedDigit('b'), Eq(soundex.encodedDigit('f')));
+	ASSERT_THAT (soundex.encodedDigit('c'), Eq(soundex.encodedDigit('g')));
+	ASSERT_THAT (soundex.encodedDigit('d'), Eq(soundex.encodedDigit('t')));
+	ASSERT_THAT (soundex.encode("Abfcgdt"), Eq("A123"));
+}
+
