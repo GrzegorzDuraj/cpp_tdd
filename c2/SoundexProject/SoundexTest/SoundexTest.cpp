@@ -22,3 +22,14 @@ TEST_F (SoundexEncoding, PadsWithZerosToEnsureThreeDigts)
 
   ASSERT_THAT(soundex.encode("I"), Eq("I000"));
 }
+
+TEST_F (SoundexEncoding, ReplacesConsonantsWithAppropiateDigits)
+{
+	ASSERT_THAT(soundex.encode("Ax"), Eq("A200"));
+}
+
+TEST_F ( SoundexEncoding, IgnoresNonAlphabetis)
+{
+	ASSERT_THAT(soundex.encode("A#"), Eq("A*00"));
+}
+
