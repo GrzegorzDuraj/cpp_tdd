@@ -10,8 +10,13 @@ std::string Soundex::GetNameOfClass ()
 
 std::string Soundex::encode(const std::string &word)const
 {
-	return zeroPad(head(word) + encodedDigits(tail(word)));
+	return zeroPad(upperFront(head(word)) + encodedDigits(tail(word)));
 
+}
+
+std::string Soundex::upperFront(const std::string & string) const
+{
+	return std::string(1,std::toupper(static_cast<unsigned char> (string.front())));
 }
 
 std::string Soundex::tail(const std::string & word) const 
