@@ -15,9 +15,7 @@ include_directories ("${CMAKE_SOURCE_DIR}/SoundexLib/headers")
 message("${SoundexLibHeaders}")
 
 add_executable (SoundexTest mainTest.cpp SoundexTest.cpp)  
-
 target_link_libraries(SoundexTest GTest::GTest GTest::Main gmock_main SoundexLib)
-
 add_test(AllTestsInFoo SoundexTest)
 
 message("\n\nONCE AGAIN list of main directories ") 

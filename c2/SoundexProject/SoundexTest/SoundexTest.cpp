@@ -13,6 +13,14 @@ TEST (SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
 
 	std::string encoded = soundex.encode("A");
 	
-	ASSERT_THAT(encoded, testing::Eq("A"));
+	ASSERT_THAT(encoded, testing::Eq("A000"));
 
+}
+
+TEST (SoundexEncoding, PadsWithZerosToEnsureThreeDigts)
+{
+  Soundex soundex;
+  std::string encoded = soundex.encode("I");
+
+  ASSERT_THAT(encoded, Eq("I000"));
 }

@@ -9,5 +9,5 @@ std::string Soundex::GetNameOfClass ()
 
 std::string Soundex::encode(const std::string &word)const
 {
-	return word;
+	return word + "000";
 }
