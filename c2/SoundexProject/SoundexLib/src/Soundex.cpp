@@ -10,8 +10,13 @@ std::string Soundex::GetNameOfClass ()
 
 std::string Soundex::encode(const std::string &word)const
 {
-	return zeroPad(head(word) + encodedDigits(word));
+	return zeroPad(head(word) + encodedDigits(tail(word)));
 
+}
+
+std::string Soundex::tail(const std::string & word) const 
+{
+	return word.substr(1);
 }
 
 std::string Soundex::zeroPad(const std::string & word) const 
@@ -29,12 +34,14 @@ std::string Soundex::head (const std::string & word) const
 
 std::string Soundex::encodedDigits(const std::string & word) const
 {
-	if (word.length()>1)
+	std::string encoding; 
+  	for (auto letter: word)
 	{
-		return encodedDigit(word[1]); 
-	}
-	
-	return "";
+		if (encoding.length() == MaxCodeLength - 1 ) break;
+
+ 		encoding += encodedDigit(letter);	
+	}	
+	return encoding; 
 }
 
 const std::string NotADigit {"*"};

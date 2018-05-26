@@ -33,3 +33,12 @@ TEST_F ( SoundexEncoding, IgnoresNonAlphabetis)
 	ASSERT_THAT(soundex.encode("A#"), Eq("A*00"));
 }
 
+TEST_F (SoundexEncoding, ReplacesMultipleConsosantsWithDigits)
+{
+	ASSERT_THAT (soundex.encode("Acdl"), Eq("A234"));
+}
+
+TEST_F (SoundexEncoding, LimitsLengthToFourCharacters)
+{
+	ASSERT_THAT( soundex.encode("Dcdlb").length(), Eq(4u));
+}
