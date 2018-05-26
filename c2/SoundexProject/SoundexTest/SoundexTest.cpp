@@ -3,24 +3,22 @@
 #include <string>
 #include "Soundex.h"
 
+using namespace testing;
 
-
-using ::testing::Eq;
-
-TEST (SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
+class SoundexEncoding:public Test 
 {
+public:
 	Soundex soundex;
+};
 
-	std::string encoded = soundex.encode("A");
-	
-	ASSERT_THAT(encoded, testing::Eq("A000"));
 
+TEST_F (SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
+{
+	ASSERT_THAT(soundex.encode("A"), Eq("A000"));
 }
 
-TEST (SoundexEncoding, PadsWithZerosToEnsureThreeDigts)
+TEST_F (SoundexEncoding, PadsWithZerosToEnsureThreeDigts)
 {
-  Soundex soundex;
-  std::string encoded = soundex.encode("I");
 
-  ASSERT_THAT(encoded, Eq("I000"));
+  ASSERT_THAT(soundex.encode("I"), Eq("I000"));
 }
