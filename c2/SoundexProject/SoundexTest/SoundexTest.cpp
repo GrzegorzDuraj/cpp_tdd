@@ -60,3 +60,20 @@ TEST_F(SoundexEncoding, UppercasesFirstLetter)
 {
 	ASSERT_THAT (soundex.encode("abcd"), StartsWith("A"));
 }
+
+
+TEST_F(SoundexEncoding, IgnoresCaseWhenEncodingConsonants)
+{
+	ASSERT_THAT(soundex.encode("BCDL"), soundex.encode("bcdl"));
+} 
+
+
+TEST_F(SoundexEncoding, CombinesDuplicateCodesWhen2ndLetterDuplicates1st)
+{
+	ASSERT_THAT(soundex.encode("Bbcd"), Eq("B230"));
+}
+
+TEST_F(SoundexEncoding, DoesNotCombineDuplicateEncodingsSeparatedByVowels)
+{
+	ASSERT_THAT(soundex.encode("jbob"), Eq("J110"));
+}

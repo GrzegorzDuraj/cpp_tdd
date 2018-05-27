@@ -25,6 +25,7 @@ class Soundex
 	std::string upperFront(const std::string & string ) const;
     void encodeHead(std::string & encoding, const std::string & word) const;
 	void encodeTail (std::string & encoding, const std::string & word) const;
-    void encodeLetter (std::string & encoding, char letter) const;
+    void encodeLetter (std::string & encoding, char letter, char lastLetter) const;
 	char lower(char c ) const;
+	bool isVowel(char letter) const;
 };
