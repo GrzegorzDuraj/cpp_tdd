@@ -2,4 +2,4 @@
 include_directories (${HttpGetHeader})
 
 
-add_library(HttpGetDataLibrary HttpGetData.cpp)
+add_library(HttpGetDataLibrary HttpGetData.cpp )
